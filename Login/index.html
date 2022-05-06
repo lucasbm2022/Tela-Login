@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Screen</title>
+  <!--Estyle css-->
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    body{
+      background-image: url('./img/fundolago.jpg');
+      background-position: center center;
+      background-size: cover;
+    }
+  </style>
+  <!-------------------------------------------->
+  <!--Java Script-->
+  <script src="./js/index.js" defer></script>
+  <!-------------------------------------------->
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-------------------------------------------->
+  <!--Icons-->
+  <script src="https://kit.fontawesome.com/bf671ef174.js" crossorigin="anonymous" defer></script>
+  <!-------------------------------------------->
+</head>
+<body>
+  <header>
+    <h1>Login Screen</h1>
+  </header>
+  <main>
+    <form action="">
+      <section class="inputs-container">
+        <input required type="email" placeholder="example@gmail.com" id="email">
+        <span class="error"></span>
+        
+        <div class="password-container">
+          <input required type="password" id="field-password" class="field-password" placeholder="********">
+          <span class="error"></span>
+          <i class="fa-solid fa-eye" id="eye" onclick="showPassword()"></i>
+          <i class="fa-solid fa-eye-low-vision" id="eye-low" onclick="showPassword()"></i>
+        </div>      
+      
+      </section>
+      <section class="password-infos">
+        <div>
+          <input type="checkbox">
+          <span>Lembrar senha</span>
+        </div>
+
+        <a href="#">Esqueceu a senha?</a>
+      </section>
+
+      <button id="btn-login">Entrar</button>
+
+      <section class="links-container">
+        <span>Ou entre com:</span>
+
+        <aside>
+          <a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="blank"><i class="fa-brands fa-google-plus-square google"></i></a>
+          <a href="https://www.linkedin.com/login/pt?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin" target="blank"><i class="fa-brands fa-linkedin linkedin"></i></a>
+          <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s%7Cc%7C320269324047%7Ce%7Cfacebook%7C&placement=&creative=320269324047&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1001625%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI0_iaz63G9wIVg2pvBB17zwhHEAAYASAAEgJ1qfD_BwE" target="blank"><i class="fa-brands fa-facebook-square facebook"></i></a>
+        </aside>
+      </section>
+      <footer>
+        <hr>
+        <span>Ainda não tem uma conta? <a href="#">Cadastre-se</a></span>
+      </footer>
+    </form>
+  </main>
+</body>
+</html>
